@@ -10,29 +10,28 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  /* Updated to vibrant green matching the logo */
-  --primary: oklch(0.55 0.18 145);
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.45 0.15 145);
-  --secondary-foreground: oklch(1 0 0);
+  --primary: oklch(0.723 0.219 149.579);
+  --primary-foreground: oklch(0.145 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(1 0 0);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
-  --ring: oklch(0.55 0.18 145);
+  --ring: oklch(0.723 0.219 149.579);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(88.244% 0.19918 160.162);
+  --chart-5: oklch(87.055% 0.28485 140.775);
   --radius: 0.625rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.55 0.18 145);
+  --sidebar-primary: oklch(0.723 0.219 149.579);
   --sidebar-primary-foreground: oklch(1 0 0);
   --sidebar-accent: oklch(0.97 0 0);
   --sidebar-accent-foreground: oklch(0.205 0 0);
@@ -47,7 +46,7 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.145 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.6 0.2 145);
+  --primary: oklch(0.723 0.219 149.579);
   --primary-foreground: oklch(0.145 0 0);
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
@@ -59,7 +58,7 @@
   --destructive-foreground: oklch(0.637 0.237 25.331);
   --border: oklch(0.269 0 0);
   --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
+  --ring: oklch(0.723 0.219 149.579);
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -67,7 +66,7 @@
   --chart-5: oklch(0.645 0.246 16.439);
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.6 0.2 145);
+  --sidebar-primary: oklch(0.723 0.219 149.579);
   --sidebar-primary-foreground: oklch(0.145 0 0);
   --sidebar-accent: oklch(0.269 0 0);
   --sidebar-accent-foreground: oklch(0.985 0 0);
@@ -112,18 +111,38 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --font-sans: var(--font-open-sans), sans-serif;
 }
 
 @layer base {
+
   * {
     @apply border-border outline-ring/50;
   }
+
+  html,
   body {
+    font-family: var(--font-open-sans), sans-serif;
     @apply bg-background text-foreground;
+  }
+
+  .container {
+    @apply mx-auto max-w-7xl px-4 md:px-8 lg:px-12;
   }
 }
 
-/* Added light cream background color for sections like BNDA */
+/* === BACKGROUNDS IMAGES (CORRIGÉ – SANS ') === */
+
+.bg-f1 {
+  background-image: url("/f1.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* === UTILS === */
+
 .bg-cream {
   background-color: #f5f5f0;
 }
@@ -132,7 +151,6 @@
   background-color: #1a4d4d;
 }
 
-/* Added custom scrollbar hiding and smooth scroll */
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -142,16 +160,28 @@
   display: none;
 }
 
+.overflow-x-auto::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-/* Added custom keyframe animations */
+/* === ANIMATIONS === */
+
 @keyframes float {
+
   0%,
   100% {
-    transform: translateY(0px);
+    transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }
@@ -161,6 +191,7 @@ html {
   0% {
     background-position: -1000px 0;
   }
+
   100% {
     background-position: 1000px 0;
   }
@@ -172,6 +203,34 @@ html {
 
 .animate-shimmer {
   animation: shimmer 2s infinite;
-  background: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%);
+  background: linear-gradient(to right,
+      transparent 0%,
+      rgba(255, 255, 255, 0.3) 50%,
+      transparent 100%);
   background-size: 1000px 100%;
+}
+
+/* === NAVBAR METALLIC === */
+
+.metallic-bg {
+  background: linear-gradient(135deg,
+      rgba(61, 179, 158, 0.15) 0%,
+      rgba(42, 143, 125, 0.25) 25%,
+      rgba(61, 179, 158, 0.15) 50%,
+      rgba(42, 143, 125, 0.25) 75%,
+      rgba(61, 179, 158, 0.15) 100%);
+  background-size: 200% 200%;
+  animation: metallic-shine 8s ease infinite;
+}
+
+@keyframes metallic-shine {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
 }

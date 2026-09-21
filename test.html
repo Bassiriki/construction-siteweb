@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AWS CLF-C02 Test 2</title>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#f3f5f7;
+    color:#172033;
+    margin:0
+}
+
+header{
+    background:#172033;
+    color:#fff;
+    padding:18px;
+    position:sticky;
+    top:0;
+    z-index:10
+}
+
+header strong{
+    font-size:18px
+}
+
+#timer{
+    float:right;
+    font-weight:bold;
+    font-size:20px
+}
+
+main{
+    max-width:850px;
+    margin:25px auto;
+    padding:0 15px
+}
+
+.card{
+    background:#fff;
+    padding:20px;
+    margin:16px 0;
+    border-radius:12px;
+    box-shadow:0 2px 8px #0001
+}
+
+.q{
+    font-weight:bold;
+    font-size:17px;
+    margin-bottom:12px
+}
+
+label{
+    display:block;
+    border:1px solid #ddd;
+    padding:12px;
+    border-radius:8px;
+    margin:8px 0;
+    cursor:pointer
+}
+
+label:hover{
+    background:#f7f8fa
+}
+
+button{
+    background:#ff9900;
+    border:0;
+    padding:14px 22px;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+    font-size:16px
+}
+
+button:hover{
+    background:#e88b00
+}
+
+button:disabled{
+    opacity:.5;
+    cursor:not-allowed
+}
+
+#result{
+    display:none
+}
+
+.good{
+    border-left:5px solid #198754
+}
+
+.bad{
+    border-left:5px solid #dc3545
+}
+
+.small{
+    color:#667085
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <strong>AWS Cloud Practitioner — Test 2</strong>
+    <span id="timer">20:00</span>
+</header>
+
+<main>
+
+<div class="card">
+    <b>20 questions</b> — Une seule réponse par question.
+    <br>
+    <span class="small">
+        Questions originales d'entraînement, pas des questions confidentielles AWS.
+    </span>
+</div>
+
+<div id="quiz"></div>
+
+<button id="finishBtn">
+    Terminer et corriger
+</button>
+
+<div id="result" class="card"></div>
+
+</main>
+
+<script>
+
+/* =========================
+   QUESTIONS
+========================= */
+
+const qs = [
+
+[
+"Une entreprise veut répartir les requêtes entre plusieurs serveurs EC2. Quel service ?",
+[
+"Amazon Route 53",
+"Elastic Load Balancing",
+"AWS CloudTrail",
+"Amazon S3"
+],
+1,
+"ELB répartit le trafic entre plusieurs cibles."
+],
+
+[
+"Des données doivent être archivées pendant plusieurs années au coût le plus faible possible. Quel choix ?",
+[
+"S3 Glacier",
+"Amazon EBS",
+"Amazon EFS",
+"DynamoDB"
+],
+0,
+"S3 Glacier est conçu pour l'archivage."
+],
+
+[
+"Une fonction doit s'exécuter quelques secondes lorsqu'un fichier est ajouté dans S3, sans gérer de serveur. Quel service ?",
+[
+"EC2",
+"Lambda",
+"RDS",
+"Redshift"
+],
+1,
+"Lambda permet l'exécution serverless déclenchée par des événements."
+],
+
+[
+"Des employés doivent accéder à plusieurs comptes AWS avec une authentification centralisée. Quel service ?",
+[
+"IAM Identity Center",
+"Amazon S3",
+"AWS WAF",
+"Amazon Inspector"
+],
+0,
+"IAM Identity Center fournit le SSO et l'accès centralisé."
+],
+
+[
+"Quelle affirmation décrit le mieux le modèle de responsabilité partagée AWS ?",
+[
+"AWS est responsable de toute la sécurité",
+"Le client est responsable de toute la sécurité physique",
+"AWS et le client partagent certaines responsabilités",
+"Il ne concerne que EC2"
+],
+2,
+"AWS sécurise l'infrastructure du cloud ; le client sécurise certains éléments dans le cloud."
+],
+
+[
+"On veut savoir quel utilisateur a supprimé une ressource et quand. Quel service ?",
+[
+"CloudWatch",
+"CloudTrail",
+"AWS Config",
+"AWS Budgets"
+],
+1,
+"CloudTrail enregistre les activités et appels d'API."
+],
+
+[
+"Le trafic augmente fortement et les instances EC2 doivent être ajoutées puis retirées automatiquement. Quel service ?",
+[
+"EC2 Auto Scaling",
+"AWS Organizations",
+"Amazon Macie",
+"AWS Artifact"
+],
+0,
+"EC2 Auto Scaling ajuste automatiquement la capacité."
+],
+
+[
+"On veut analyser les dépenses AWS des derniers mois par service. Quel outil ?",
+[
+"Cost Explorer",
+"Pricing Calculator",
+"CloudFormation",
+"Inspector"
+],
+0,
+"Cost Explorer analyse les coûts et l'utilisation."
+],
+
+[
+"On veut recevoir une alerte lorsque les dépenses dépassent un seuil. Quel service ?",
+[
+"AWS Budgets",
+"CloudWatch uniquement",
+"AWS Shield",
+"AWS KMS"
+],
+0,
+"AWS Budgets permet de définir des seuils et alertes de coûts."
+],
+
+[
+"Une application a besoin d'un cache en mémoire à très faible latence. Quel service ?",
+[
+"ElastiCache",
+"S3 Glacier",
+"EBS",
+"Route 53"
+],
+0,
+"ElastiCache fournit du cache en mémoire."
+],
+
+[
+"Une entreprise veut connecter son réseau local à AWS via Internet avec un tunnel chiffré. Quel service ?",
+[
+"Site-to-Site VPN",
+"CloudFront",
+"SQS",
+"WAF"
+],
+0,
+"Site-to-Site VPN crée des tunnels VPN chiffrés."
+],
+
+[
+"Une entreprise veut une connexion réseau dédiée entre son datacenter et AWS. Quel service ?",
+[
+"Direct Connect",
+"NAT Gateway",
+"Internet Gateway",
+"Route 53"
+],
+0,
+"Direct Connect fournit une connexion dédiée."
+],
+
+[
+"Un même événement doit être envoyé à plusieurs abonnés, par exemple e-mail, Lambda et SQS. Quel service ?",
+[
+"SNS",
+"EBS",
+"RDS",
+"EFS"
+],
+0,
+"SNS utilise un modèle pub/sub."
+],
+
+[
+"Des tâches doivent être placées dans une file et traitées par plusieurs workers. Quel service ?",
+[
+"SQS",
+"SNS",
+"Route 53",
+"CloudFront"
+],
+0,
+"SQS fournit des files de messages et découple les composants."
+],
+
+[
+"On veut boire certaines requêtes Web malveillantes, notamment certaines injections SQL. Quel service ?",
+[
+"WAF",
+"Shield",
+"Macie",
+"KMS"
+],
+0,
+"AWS WAF filtre les requêtes Web selon des règles."
+],
+
+[
+"On veut détecter automatiquement des activités potentiellement malveillantes dans AWS. Quel service ?",
+[
+"GuardDuty",
+"S3",
+"Budgets",
+"EFS"
+],
+0,
+"GuardDuty détecte les menaces et activités suspectes."
+],
+
+[
+"On veut gérer les clés de chiffrement utilisées pour protéger des données. Quel service ?",
+[
+"KMS",
+"CloudTrail",
+"Route 53",
+"SQS"
+],
+0,
+"KMS permet de créer et gérer des clés cryptographiques."
+],
+
+[
+"On veut déployer la même infrastructure dans plusieurs environnements avec des templates. Quel service ?",
+[
+"CloudFormation",
+"CloudWatch",
+"Inspector",
+"Trusted Advisor"
+],
+0,
+"CloudFormation permet de définir l'infrastructure sous forme de code."
+],
+
+[
+"On veut une base NoSQL entièrement managée avec mise à l'échelle automatique. Quel service ?",
+[
+"DynamoDB",
+"RDS",
+"Redshift",
+"Aurora"
+],
+0,
+"DynamoDB est une base NoSQL managée et serverless."
+],
+
+[
+"On veut accélérer un site mondial en rapprochant les contenus statiques des utilisateurs. Quel service ?",
+[
+"CloudFront",
+"RDS",
+"IAM",
+"SQS"
+],
+0,
+"CloudFront est le CDN d'AWS."
+]
+
+];
+
+
+/* =========================
+   VARIABLES
+========================= */
+
+let left = 20 * 60;
+let done = false;
+
+
+/* =========================
+   AFFICHAGE DES QUESTIONS
+========================= */
+
+function renderQuestions(){
+
+    const quiz = document.getElementById("quiz");
+
+    quiz.innerHTML = "";
+
+    qs.forEach(function(q, i){
+
+        const card = document.createElement("div");
+
+        card.className = "card";
+        card.id = "question-" + i;
+
+        let html = "";
+
+        html += '<div class="q">';
+        html += (i + 1) + ". " + q[0];
+        html += "</div>";
+
+        q[1].forEach(function(option, j){
+
+            html += '<label>';
+
+            html += '<input type="radio" ';
+            html += 'name="question' + i + '" ';
+            html += 'value="' + j + '"> ';
+
+            html += String.fromCharCode(65 + j);
+            html += ". ";
+            html += option;
+
+            html += "</label>";
+
+        });
+
+        card.innerHTML = html;
+
+        quiz.appendChild(card);
+
+    });
+
+}
+
+
+/* =========================
+   CHRONOMÈTRE
+========================= */
+
+function updateTimer(){
+
+    if(done){
+        return;
+    }
+
+    const minutes = Math.floor(left / 60);
+
+    const seconds = left % 60;
+
+    document.getElementById("timer").textContent =
+        minutes + ":" + String(seconds).padStart(2, "0");
+
+    if(left <= 0){
+
+        finish();
+
+        return;
+    }
+
+    left--;
+
+}
+
+
+/* =========================
+   CORRECTION
+========================= */
+
+function finish(){
+
+    if(done){
+        return;
+    }
+
+    done = true;
+
+    let score = 0;
+
+    qs.forEach(function(q, i){
+
+        const selected = document.querySelector(
+            'input[name="question' + i + '"]:checked'
+        );
+
+        const card = document.getElementById("question-" + i);
+        const labels = card.querySelectorAll("label");
+
+        const correctIndex = q[2];
+        const explanation = q[3];
+
+        // Désactiver toutes les options après soumission
+        const inputs = card.querySelectorAll("input");
+        inputs.forEach(input => input.disabled = true);
+
+        let userIndex = selected ? parseInt(selected.value) : -1;
+
+        if (userIndex === correctIndex) {
+            score++;
+            card.classList.add("good");
+        } else {
+            card.classList.add("bad");
+        }
+
+        // Coloration visuelle des réponses (Vert pour correct, Rouge pour erreur)
+        labels.forEach((label, j) => {
+            if (j === correctIndex) {
+                label.style.background = "#d1e7dd";
+                label.style.borderColor = "#a3cfbb";
+                label.style.fontWeight = "bold";
+            } else if (j === userIndex) {
+                label.style.background = "#f8d7da";
+                label.style.borderColor = "#f5c2c7";
+            }
+        });
+
+        // Ajout de l'explication sous la question
+        const expDiv = document.createElement("div");
+        expDiv.className = "small";
+        expDiv.style.marginTop = "10px";
+        expDiv.style.paddingTop = "10px";
+        expDiv.style.borderTop = "1px dashed #ddd";
+        expDiv.innerHTML = "<strong>💡 Explication :</strong> " + explanation;
+        card.appendChild(expDiv);
+    });
+
+    // Affichage et calcul du score final
+    const resultDiv = document.getElementById("result");
+    const pourcent = Math.round((score / qs.length) * 100);
+    
+    let comment = pourcent >= 70 ? "🎉 Félicitations ! Vous avez validé ce test." : "❌ Score insuffisant. Continuez à réviser !";
+

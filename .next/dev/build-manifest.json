@@ -1,50 +1,18 @@
 {
-  "pages": {
-    "/_app": [
-      "static/chunks/3c67c_next_dist_compiled_86bf8a09._.js",
-      "static/chunks/3c67c_next_dist_shared_lib_eaedbf94._.js",
-      "static/chunks/3c67c_next_dist_client_32d42cfa._.js",
-      "static/chunks/3c67c_next_dist_04b65779._.js",
-      "static/chunks/3c67c_next_app_2b8003d6.js",
-      "static/chunks/[next]_entry_page-loader_ts_ae8b37d1._.js",
-      "static/chunks/5a259_react-dom_2a0b7a2e._.js",
-      "static/chunks/0fa5f__pnpm_80bbae6e._.js",
-      "static/chunks/[root-of-the-server]__6da162ca._.js",
-      "static/chunks/Downloads_code (2)_pages__app_2da965e7._.js",
-      "static/chunks/turbopack-Downloads_code (2)_pages__app_01dcc8fa._.js"
-    ],
-    "/_error": [
-      "static/chunks/3c67c_next_dist_compiled_86bf8a09._.js",
-      "static/chunks/3c67c_next_dist_shared_lib_cb5a25d1._.js",
-      "static/chunks/3c67c_next_dist_client_32d42cfa._.js",
-      "static/chunks/3c67c_next_dist_12fb1637._.js",
-      "static/chunks/3c67c_next_error_1a80069a.js",
-      "static/chunks/[next]_entry_page-loader_ts_7bdff23f._.js",
-      "static/chunks/5a259_react-dom_2a0b7a2e._.js",
-      "static/chunks/0fa5f__pnpm_80bbae6e._.js",
-      "static/chunks/[root-of-the-server]__1105eb95._.js",
-      "static/chunks/Downloads_code (2)_pages__error_2da965e7._.js",
-      "static/chunks/turbopack-Downloads_code (2)_pages__error_c2a0d2cc._.js"
-    ]
-  },
-  "devFiles": [],
   "polyfillFiles": [
-    "static/chunks/3c67c_next_dist_build_polyfills_polyfill-nomodule.js"
+    "static/chunks/polyfills.js"
   ],
+  "devFiles": [],
   "lowPriorityFiles": [
-    "static/development/_ssgManifest.js",
-    "static/development/_buildManifest.js"
+    "static/development/_buildManifest.js",
+    "static/development/_ssgManifest.js"
   ],
   "rootMainFiles": [
-    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_9065c52e._.js",
-    "static/chunks/3c67c_next_dist_compiled_react-dom_c0fa8e06._.js",
-    "static/chunks/3c67c_next_dist_compiled_react-server-dom-turbopack_3de6ac3d._.js",
-    "static/chunks/3c67c_next_dist_compiled_next-devtools_index_90fbf520.js",
-    "static/chunks/3c67c_next_dist_compiled_f6cae7c1._.js",
-    "static/chunks/3c67c_next_dist_client_cad58da8._.js",
-    "static/chunks/3c67c_next_dist_f9ad1a2a._.js",
-    "static/chunks/0fa5f__pnpm_7320525d._.js",
-    "static/chunks/Downloads_code (2)_a0ff3932._.js",
-    "static/chunks/turbopack-Downloads_code (2)_66cceecd._.js"
-  ]
+    "static/chunks/webpack.js",
+    "static/chunks/main-app.js"
+  ],
+  "rootMainFilesTree": {},
+  "pages": {
+    "/_app": []
+  }
 }

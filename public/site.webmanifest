@@ -1,0 +1,24 @@
+{
+    "name": "Manding Construction",
+    "short_name": "Manding",
+    "description": "Expert en Construction Métallique , BTP , Adduction d'eau et Prestations de services au Mali",
+    "icons": [
+        {
+            "src": "/new-logo.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/new-logo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": "/",
+    "scope": "/"
+}

@@ -1,117 +1,117 @@
 "use client"
-
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Building2, Sun, Droplets, Wrench, HardHat, Zap } from "lucide-react"
-import { useEffect, useRef, useState } from "react"
-import { useRouter } from "next/navigation" // ✅ pour la navigation entre pages
+import { ArrowUpRight } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
 
 const services = [
   {
-    icon: Building2,
-    title: "Structures Métalliques",
-    href: "/structuresmetal", // ✅ chemin correct sans /app
-    description:
-      "Conception et installation de structures métalliques robustes pour tous types de bâtiments industriels et commerciaux.",
+    num: "01",
+    title: "Construction Métallique",
+    image: "/construction-metalique-images/metal-1.jpg",
+    href: "/structuresmetal",
+    roundedClass: "rounded-bl-[100px] rounded-tl-2xl rounded-tr-2xl rounded-br-2xl",
   },
   {
-    icon: Sun,
-    title: "Installations Solaires",
-    href: "/installations-solaires",
-    description:
-      "Solutions d'énergie renouvelable avec installation de panneaux solaires et systèmes photovoltaïques performants.",
+    num: "02",
+    title: "BTP & Génie Civil",
+    image: "/btp-images/btp-1.jpg",
+    href: "/btp",
+    roundedClass: "rounded-2xl",
   },
   {
-    icon: Droplets,
-    title: "Infrastructures Hydrauliques",
-    href: "/infrastructures-hydrauliques",
-    description:
-      "Construction de châteaux d'eau, systèmes de distribution et infrastructures de gestion des eaux.",
+    num: "03",
+    title: "Adduction d'Eau",
+    image: "/adduction-eau-images/eau-1.jpg",
+    href: "/adduction-eau",
+    roundedClass: "rounded-2xl",
   },
   {
-    icon: Wrench,
-    title: "Maintenance Industrielle",
-    href: "/maintenance-industrielle",
-    description:
-      "Services de maintenance préventive et corrective pour garantir la longévité de vos installations.",
+    num: "04",
+    title: "Menuiserie Aluminium",
+    image: "/aluminium-images/alu-1.jpg",
+    href: "/menuiserie-aluminium",
+    roundedClass: "rounded-2xl",
   },
   {
-    icon: HardHat,
-    title: "Gestion de Projets",
-    href: "/gestion-projets",
-    description:
-      "Accompagnement complet de vos projets, de la conception à la livraison, avec suivi rigoureux.",
-  },
-  {
-    icon: Zap,
-    title: "Installations Électriques",
-    href: "/installations-electriques",
-    description:
-      "Mise en place de systèmes électriques conformes aux normes pour bâtiments industriels et résidentiels.",
+    num: "05",
+    title: "Prestation de Services",
+    image: "/prestation-service-images/service-2.jpeg",
+    href: "/prestation-service",
+    roundedClass: "rounded-br-[100px] rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl",
   },
 ]
 
 export function Services() {
-  const [isVisible, setIsVisible] = useState(false)
-  const sectionRef = useRef<HTMLElement>(null)
-  const router = useRouter() // ✅ hook de navigation Next.js
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-        }
-      },
-      { threshold: 0.1 },
-    )
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current)
-    }
-
-    return () => observer.disconnect()
-  }, [])
-
   return (
-    <section ref={sectionRef} id="services" className="py-20 md:py-28 bg-background">
-      <div className="container mx-auto px-4">
-        <div
-          className={`text-center mb-16 transition-all duration-1000 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
-        >
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-balance">Nos Services d'Excellence</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Une gamme complète de services pour répondre à tous vos besoins en construction et infrastructure
-          </p>
+    <section id="services" className="bg-white py-20 lg:py-28 overflow-hidden">
+      <div className="max-w-[1440px] mx-auto px-6 sm:px-12 lg:px-20">
+        
+        {/* Header Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start mb-16">
+          <div className="lg:col-span-6">
+            <div className="text-[11px] font-bold text-gray-500 uppercase tracking-[0.2em] mb-2">
+              Nos Services
+            </div>
+            <div className="w-12 h-[2px] bg-[#4ade80] mb-8" />
+            <h2 className="text-3xl sm:text-4xl lg:text-[2.6rem] font-bold leading-[1.2] text-gray-950 tracking-tight">
+              Les métiers de <span className="text-[#4ade80] relative pb-2 inline-block">
+                Manding Construction
+                <span className="absolute bottom-0 left-0 w-full h-[3px] bg-[#4ade80] rounded" />
+              </span>
+            </h2>
+          </div>
+          <div className="lg:col-span-6 text-gray-600 text-sm sm:text-base leading-relaxed lg:pt-10">
+            Depuis 1996, nous structurons notre action autour de métiers clés du bâtiment, du génie civil et de l'hydraulique. Forts de cette expertise, nous concevons et réalisons des solutions sur mesure en construction métallique, adduction d'eau, menuiserie aluminium et maintenance industrielle pour accompagner nos partenaires dans la réussite de leurs projets.
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((service, index) => {
-            const Icon = service.icon
-            return (
-              <Card
-                key={index}
-                id={`service-${index}`}
-                onClick={() => router.push(service.href)} // ✅ redirection directe
-                className={`border-2 hover:border-primary transition-all duration-500 hover:shadow-xl hover:-translate-y-2 group cursor-pointer ${
-                  isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                }`}
-                style={{ transitionDelay: `${index * 100}ms` }}
-              >
-                <CardHeader>
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                    <Icon className="h-6 w-6 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
+        {/* 5-Column Grid Card Section */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          {services.map((service, index) => (
+            <Link 
+              key={index} 
+              href={service.href}
+              className={`group relative h-[450px] sm:h-[480px] lg:h-[500px] overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer ${service.roundedClass}`}
+            >
+              {/* Background Image */}
+              <div className="absolute inset-0 z-0 transition-transform duration-700 group-hover:scale-110">
+                <Image 
+                  src={service.image} 
+                  alt={service.title} 
+                  fill 
+                  className="object-cover object-center"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 20vw"
+                  priority={index < 2}
+                />
+              </div>
+
+              {/* Dark Wash Overlay (Gradient) */}
+              <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/80 via-black/40 to-black/20 group-hover:from-black/90 group-hover:via-black/50 group-hover:to-black/30 transition-colors duration-300" />
+
+              {/* Card Content (Top Aligned) */}
+              <div className="absolute inset-0 z-20 p-6 flex flex-col justify-between">
+                
+                {/* Number & Arrow Inline Row */}
+                <div className="flex items-baseline justify-between">
+                  <div className="flex items-baseline gap-1 text-5xl sm:text-6xl font-extrabold tracking-tight text-[#4ade80]">
+                    <span>{service.num}</span>
+                    <ArrowUpRight className="w-6 h-6 text-[#4ade80] transform transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
                   </div>
-                  <CardTitle className="text-xl group-hover:text-primary transition-colors">{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base leading-relaxed">{service.description}</CardDescription>
-                </CardContent>
-              </Card>
-            )
-          })}
+                </div>
+
+                {/* Service Title */}
+                <div className="mb-4">
+                  <h3 className="text-lg sm:text-xl font-bold text-white tracking-wide uppercase leading-snug">
+                    {service.title}
+                  </h3>
+                </div>
+
+              </div>
+
+            </Link>
+          ))}
         </div>
+
       </div>
     </section>
   )

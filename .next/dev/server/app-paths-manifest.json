@@ -1,9 +1,8 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/infrastructures-hydrauliques/page": "app/infrastructures-hydrauliques/page.js",
-  "/installations-electriques/page": "app/installations-electriques/page.js",
-  "/installations-solaires/page": "app/installations-solaires/page.js",
-  "/maintenance-industrielle/page": "app/maintenance-industrielle/page.js",
   "/page": "app/page.js",
-  "/structuresmetal/page": "app/structuresmetal/page.js"
+  "/structuresmetal/page": "app/structuresmetal/page.js",
+  "/btp/page": "app/btp/page.js",
+  "/adduction-eau/page": "app/adduction-eau/page.js",
+  "/prestation-service/page": "app/prestation-service/page.js",
+  "/menuiserie-aluminium/page": "app/menuiserie-aluminium/page.js"
 }

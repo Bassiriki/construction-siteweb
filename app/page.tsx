@@ -1,28 +1,31 @@
-import { TopBar } from "@/components/top-bar"
-import { Header } from "@/components/header"
-import { Hero } from "@/components/hero"
-import { Services } from "@/components/services"
-import { Projects } from "@/components/projects"
 import { About } from "@/components/about"
 import { Contact } from "@/components/contact"
-import { Footer } from "@/components/footer"
-import  Carroussel  from "@/components/carroussel"
- 
+import { DirectorMessage } from "@/components/director-message"
+import { Hero } from "@/components/hero"
+import { Partners } from "@/components/partners"
+import { Services } from "@/components/services"
+import { TeamPresentation } from "@/components/team-presentation"
+import { VehicleFleet } from "@/components/vehicle-fleet"
+import { WhyChooseUs } from "@/components/why-choose-us"
+import { Metadata } from "next"
 
+export const metadata: Metadata = {
+  title: "Accueil",
+  description: "Bienvenue chez Manding Construction, leader en BTP, structures métalliques et installations solaires au Mali.",
+}
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <TopBar />
-      <Header />
+    <>
       <Hero />
-      <Services />
-      <Projects />
-      <Carroussel />
       <About />
+      <WhyChooseUs />
+      <Services />
+      <DirectorMessage />
+      <TeamPresentation />
+      <VehicleFleet />
+      <Partners />
       <Contact />
-      <Footer />
-       
-    </main>
+    </>
   )
 }

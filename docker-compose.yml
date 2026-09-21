@@ -1,0 +1,48 @@
+version: "3.9"
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: wordpress_db
+    restart: always
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wpuser
+      MYSQL_PASSWORD: Bassiriki
+      MYSQL_ROOT_PASSWORD: rootpassword
+    volumes:
+      - db_data:/var/lib/mysql
+
+  wordpress:
+    image: wordpress:latest
+    container_name: wordpress_app
+    restart: always
+    ports:
+      - "8181:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wpuser
+      WORDPRESS_DB_PASSWORD: Bassiriki
+    volumes:
+      - wp_data:/var/www/html
+    depends_on:
+      - db
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin_elearning
+    restart: always
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+    volumes:
+      - ./phpmyadmin.ini:/usr/local/etc/php/conf.d/uploads.ini  # monte ton php.ini personnalisé
+    depends_on:
+      - db
+
+volumes:
+  db_data:
+  wp_data:

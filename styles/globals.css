@@ -114,6 +114,18 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 }
+.metallic-bg {
+  background: url("/metal-texture.jpg");
+  background-size: cover;
+  animation: metallicMove 12s infinite linear;
+  filter: contrast(1.4) brightness(0.8);
+}
+
+@keyframes metallicMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 200% 0; }
+}
+
 
 @layer base {
   * {

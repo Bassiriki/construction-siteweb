@@ -1,110 +1,145 @@
-"use client"
+"use client";
 
-import { useEffect, useState, useCallback } from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import useEmblaCarousel from "embla-carousel-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
+import { useCallback, useEffect, useState } from "react";
 
-const images = ["/f1.jpeg", "/f2.jpeg", "/h1.jpg", "/h2.jpeg", "/m1.jpeg", "/m2.jpeg", "/m3.jpeg", "/m4.jpeg", "/h3.jpeg", "/h4.jpeg", "/h5.jpeg", "/h6.jpeg", "/h7.jpeg", "/h8.jpeg", "/h9.jpeg"]
+export default function ServicesSection() {
+  const PRIMARY = "#3DB39E";
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "start" });
+  const [selectedIndex, setSelectedIndex] = useState(0);
 
-interface CarouselCardProps {
-  title?: string
-  description?: string
-}
+  const cards = [
+    {
+      number: "01",
+      title: "CONSTRUCTION MÉTALLIQUE",
+      description: "Structures robustes et durables pour l'industrie.",
+      image: "/f1.jpeg",
+    },
+    {
+      number: "02",
+      title: "BTP",
+      description: "Grands ouvrages et génie civil de précision.",
+      image: "/f2.jpeg",
+    },
+    {
+      number: "03",
+      title: "ADDUCTION D’EAU",
+      description: "Solutions hydrauliques pour un accès vital.",
+      image: "/h1.jpg",
+    },
+    {
+      number: "04",
+      title: "PRESTATIONS DE SERVICE",
+      description: "Maintenance et services techniques sur-mesure.",
+      image: "/i2.jpg",
+    },
+  ];
 
-export default function CarouselCards({
-  title = "Nos réalisations récentes",
-  description = "Découvrez nos derniers projets",
-}: CarouselCardProps) {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [visibleCards, setVisibleCards] = useState(3)
-  const [isAutoPlay, setIsAutoPlay] = useState(true)
-  const [isTransitioning, setIsTransitioning] = useState(false)
-  const [direction, setDirection] = useState<"next" | "prev">("next")
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
 
-  const handleNext = useCallback(() => {
-    if (!isTransitioning) {
-      setDirection("next")
-      setIsTransitioning(true)
-      setCurrentIndex((prev) => (prev + 1) % images.length)
-      setTimeout(() => setIsTransitioning(false), 700)
-    }
-  }, [isTransitioning])
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
 
-  const handlePrev = useCallback(() => {
-    if (!isTransitioning) {
-      setDirection("prev")
-      setIsTransitioning(true)
-      setCurrentIndex((prev) => (prev - 1 + images.length) % images.length)
-      setTimeout(() => setIsTransitioning(false), 700)
-    }
-  }, [isTransitioning])
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    setSelectedIndex(emblaApi.selectedScrollSnap());
+  }, [emblaApi]);
 
   useEffect(() => {
-    if (!isAutoPlay) return
-    const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % images.length)
-    }, 4000)
-    return () => clearInterval(timer)
-  }, [isAutoPlay])
+    if (!emblaApi) return;
+    emblaApi.on("select", onSelect);
 
-  useEffect(() => {
-    const updateVisibleCards = () => {
-      if (window.innerWidth < 640) setVisibleCards(1)
-      else if (window.innerWidth < 1024) setVisibleCards(2)
-      else if (window.innerWidth < 1280) setVisibleCards(2.5)
-      else setVisibleCards(3)
-    }
-    updateVisibleCards()
-    window.addEventListener("resize", updateVisibleCards)
-    return () => window.removeEventListener("resize", updateVisibleCards)
-  }, [])
+    // Autoplay custom implementation
+    const intervalId = setInterval(() => {
+      if (emblaApi.canScrollNext()) {
+        emblaApi.scrollNext();
+      } else {
+        emblaApi.scrollTo(0);
+      }
+    }, 4000);
+
+    return () => {
+      clearInterval(intervalId);
+      emblaApi.off("select", onSelect);
+    };
+  }, [emblaApi, onSelect]);
 
   return (
-    <section className="relative w-full bg-gradient-to-b from-background to-secondary/10 py-16 md:py-24 lg:py-32 overflow-hidden">
-      <div className="text-center mb-12 md:mb-16 px-4 animate-fade-in-down">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 text-balance">{title}</h2>
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">{description}</p>
+    <section className="w-full py-24 bg-white overflow-hidden">
+      {/* TITRE */}
+      <div className="container mx-auto px-4 mb-14 flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+            Nos domaines<br />
+            <span style={{ color: PRIMARY }}>d’expertise</span>
+          </h2>
+          <div className="w-24 h-1.5 mt-6" style={{ backgroundColor: PRIMARY }}></div>
+        </div>
+
+        <div className="flex gap-4">
+          <button
+            onClick={scrollPrev}
+            className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-[#3DB39E] hover:text-white hover:border-[#3DB39E] transition-all duration-300"
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
+          <button
+            onClick={scrollNext}
+            className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center hover:bg-[#3DB39E] hover:text-white hover:border-[#3DB39E] transition-all duration-300"
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
+        </div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <button
-          onClick={handlePrev}
-          onMouseEnter={() => setIsAutoPlay(false)}
-          onMouseLeave={() => setIsAutoPlay(true)}
-          aria-label="Previous slide"
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-20 -ml-4 sm:-ml-6 lg:-ml-8 bg-primary hover:bg-primary/90 p-2.5 sm:p-3 rounded-full text-primary-foreground transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-xl active:scale-95"
-        >
-          <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
-        </button>
-
-        <div className="overflow-hidden w-full rounded-3xl shadow-2xl">
-          <div
-            className={`flex transition-transform duration-700 ease-out gap-4 ${direction === "next" ? "animate-slide-forward" : "animate-slide-backward"}`}
-            style={{
-              transform: `translateX(-${(currentIndex * 100) / visibleCards}%)`,
-            }}
-          >
-            {images.map((src, i) => (
-              <div
-                key={i}
-                className="flex-shrink-0"
-                style={{
-                  minWidth: `${100 / visibleCards}%`,
-                  paddingRight: "1rem",
-                }}
-              >
-                <div className="group relative h-64 sm:h-72 md:h-80 lg:h-96 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
-                  <img
-                    src={src || "/placeholder.svg"}
-                    alt={`Projet ${i + 1}`}
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-125"
+      {/* CAROUSEL */}
+      <div className="container mx-auto px-4">
+        <div className="overflow-hidden" ref={emblaRef}>
+          <div className="flex -ml-6">
+            {cards.map((item, index) => (
+              <div key={index} className="flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.33%] pl-6 min-w-0">
+                <div className="relative group h-[500px] rounded-2xl overflow-hidden cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500">
+                  {/* IMAGE DYNAMIQUE */}
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="
+                      object-cover 
+                      transition-all duration-[1500ms] ease-out 
+                      group-hover:scale-110
+                    "
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  {/* OVERLAY GRADIENT */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500"></div>
 
-                  <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:animate-fade-in-up">
-                    <div className="text-center">
-                      <p className="text-white font-semibold text-lg md:text-xl mb-2">Projet {i + 1}</p>
-                      <p className="text-white/80 text-sm md:text-base">Découvrez les détails</p>
+                  {/* CONTENU */}
+                  <div className="absolute inset-0 p-8 flex flex-col justify-between">
+                    {/* Top: Number */}
+                    <div className="flex justify-between items-start">
+                      <span className="text-6xl font-bold text-white/10 group-hover:text-[#3DB39E]/20 transition-colors duration-500">
+                        {item.number}
+                      </span>
+                      <div className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+                        <ChevronRight className="w-5 h-5 text-white" />
+                      </div>
+                    </div>
+
+                    {/* Bottom: Title & Desc */}
+                    <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                      <h3 className="text-white text-2xl font-bold leading-tight mb-3 group-hover:text-[#3DB39E] transition-colors duration-300">
+                        {item.title}
+                      </h3>
+                      <p className="text-gray-300 text-sm leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                        {item.description}
+                      </p>
+                      <div className="h-1 w-0 bg-[#3DB39E] mt-4 group-hover:w-full transition-all duration-700 ease-out"></div>
                     </div>
                   </div>
                 </div>
@@ -112,35 +147,7 @@ export default function CarouselCards({
             ))}
           </div>
         </div>
-
-        <button
-          onClick={handleNext}
-          onMouseEnter={() => setIsAutoPlay(false)}
-          onMouseLeave={() => setIsAutoPlay(true)}
-          aria-label="Next slide"
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-20 -mr-4 sm:-mr-6 lg:-mr-8 bg-primary hover:bg-primary/90 p-2.5 sm:p-3 rounded-full text-primary-foreground transition-all duration-300 hover:scale-110 shadow-lg hover:shadow-xl active:scale-95"
-        >
-          <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
-        </button>
-      </div>
-
-      <div className="flex justify-center items-center gap-3 mt-12 md:mt-16 px-4">
-        {images.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => {
-              setCurrentIndex(i)
-              setIsAutoPlay(true)
-            }}
-            aria-label={`Go to slide ${i + 1}`}
-            className={`transition-all duration-300 rounded-full ${
-              i === currentIndex
-                ? "bg-primary h-3 w-8 scale-100 shadow-lg shadow-primary/50"
-                : "bg-muted hover:bg-muted-foreground h-2.5 w-2.5 hover:scale-125"
-            }`}
-          />
-        ))}
       </div>
     </section>
-  )
+  );
 }

@@ -1,554 +1,9 @@
-[00:00:05.019] Server  LOG      ✓ Ready in 3.8s
-[00:03:25.749] Server  LOG      ○ Compiling / ...
-[00:03:37.723] Server  WARN     ⚠ Cross origin request detected from 192.168.184.1 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
-Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:03:37.783] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:49.293] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:03:49.293] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:03:49.293] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762937488971}
-[00:04:29.550] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:29.833] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:04:29.833] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:04:29.834] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762937529511}
-[00:08:19.414] Server  LOG      ✓ Compiled in 1199ms
-[00:08:28.533] Server  LOG      ✓ Compiled in 135ms
-[00:08:32.141] Server  LOG      ✓ Compiled in 509ms
-[00:08:37.162] Server  LOG      ✓ Compiled in 229ms
-[00:08:39.948] Server  LOG      ✓ Compiled in 95ms
-[00:08:44.696] Server  LOG      ✓ Compiled in 160ms
-[00:08:48.577] Server  LOG      ✓ Compiled in 169ms
-[00:08:51.002] Server  LOG      ✓ Compiled in 106ms
-[00:08:52.728] Server  LOG      ✓ Compiled in 185ms
-[00:09:04.409] Server  LOG      ✓ Compiled in 116ms
-[00:09:11.485] Server  LOG      ✓ Compiled in 247ms
-[00:11:15.621] Server  LOG      ✓ Compiled in 2.3s
-[00:11:16.494] Browser ERROR   ./Downloads/code (2)/components/header.tsx:69:5
-Parsing ecmascript source code failed
-  67 | >
-  68 |
-> 69 |     >
-     |     ^
-  70 |       <div className="container mx-auto px-4">
-  71 |         <div className="flex h-20 items-center justify-between relative">
-  72 |           {/* ---- LOGO ---- */}
-
-Unexpected token. Did you mean `{'>'}` or `&gt;`?
-
-Import trace:
-  Server Component:
-    ./Downloads/code (2)/components/header.tsx
-    ./Downloads/code (2)/app/page.tsx
-[00:11:17.068] Server  LOG      ✓ Compiled in 143ms
-[00:11:17.499] Browser ERROR   ./Downloads/code (2)/components/header.tsx:150:11
-Parsing ecmascript source code failed
-  148 |             {isMenuOpen ? <X className="h-6 w-6 text-gray-700" /> : <Menu className="h-6 w-6 text-gray-700" />}
-  149 |           </button>
-> 150 |         </div>
-      |           ^^^
-  151 |
-  152 |         {/* ---- NAV SECONDAIRE ---- */}
-  153 |         <div className="hidden lg:flex items-center justify-center gap-8 py-3 border-t border-gray-200">
-
-Expected corresponding JSX closing tag for <header>
-
-Import trace:
-  Server Component:
-    ./Downloads/code (2)/components/header.tsx
-    ./Downloads/code (2)/app/page.tsx
-[00:11:19.264] Server  LOG      ✓ Compiled in 114ms
-[00:11:19.491] Browser ERROR   ./Downloads/code (2)/components/header.tsx:69:5
-Parsing ecmascript source code failed
-  67 | >
-  68 |       
-> 69 |     >
-     |     ^
-  70 |       <div className="container mx-auto px-4">
-  71 |         <div className="flex h-20 items-center justify-between relative">
-  72 |           {/* ---- LOGO ---- */}
-
-Unexpected token. Did you mean `{'>'}` or `&gt;`?
-
-Import trace:
-  Server Component:
-    ./Downloads/code (2)/components/header.tsx
-    ./Downloads/code (2)/app/page.tsx
-[00:11:20.639] Server  LOG      ✓ Compiled in 143ms
-[00:11:29.131] Server  LOG      ✓ Compiled in 127ms
-[00:12:55.596] Server  LOG      ✓ Compiled in 828ms
-[00:13:03.952] Server  LOG      ✓ Compiled in 106ms
-[00:14:04.696] Server  LOG      ✓ Compiled in 265ms
-[00:14:05.492] Browser ERROR   ./Downloads/code (2)/components/header.tsx:191:5
-Parsing ecmascript source code failed
-  189 |         )}
-  190 |       </div>
-> 191 |     </header>
-      |     ^
-  192 |   )
-  193 | }
-  194 |
-
-Expression expected
-
-Import trace:
-  Server Component:
-    ./Downloads/code (2)/components/header.tsx
-    ./Downloads/code (2)/app/page.tsx
-[00:14:05.492] Browser ERROR   ./Downloads/code (2)/components/header.tsx:191:6
-Parsing ecmascript source code failed
-  189 |         )}
-  190 |       </div>
-> 191 |     </header>
-      |      ^^^^^^^^
-  192 |   )
-  193 | }
-  194 |
-
-Unterminated regexp literal
-
-Import trace:
-  Server Component:
-    ./Downloads/code (2)/components/header.tsx
-    ./Downloads/code (2)/app/page.tsx
-[00:14:25.494] Browser ERROR   ./Downloads/code (2)/components/header.tsx:190:1
-Parsing ecmascript source code failed
-  188 |           </nav>
-  189 |        
-> 190 | }
-      | ^
-  191 |
-
-Expected '</', got '}'
-
-Import trace:
-  Server Component:
-    ./Downloads/code (2)/components/header.tsx
-    ./Downloads/code (2)/app/page.tsx
-[00:14:27.269] Server  LOG      ✓ Compiled in 112ms
-[00:16:36.147] Server  LOG      ✓ Compiled in 1138ms
-[00:16:52.446] Server  LOG      ✓ Compiled in 194ms
-[00:16:59.995] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:16:59.995] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/structuresmetal color: rgb(120, 120, 120) color: inherit {"dp":"/structuresmetal","o":"http://192.168.184.1:3000/structuresmetal","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762938279671}
-[00:18:42.794] Server  LOG      ✓ Compiled in 478ms
-[00:19:05.162] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762938404798}
-[00:19:41.458] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/structuresmetal color: rgb(120, 120, 120) color: inherit {"dp":"/structuresmetal","o":"http://192.168.184.1:3000/structuresmetal","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762938441132}
-[00:19:46.878] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:19:47.109] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:19:47.109] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/structuresmetal","route":"/structuresmetal"}
-[00:19:47.109] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/structuresmetal color: rgb(120, 120, 120) color: inherit {"dp":"/structuresmetal","o":"http://192.168.184.1:3000/structuresmetal","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762938446787}
-[00:19:54.987] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:19:54.987] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762938454669}
-[00:20:13.854] Server  LOG      ○ Compiling /installations-solaires ...
-[00:20:14.419] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/installations-solaires color: rgb(120, 120, 120) color: inherit {"dp":"/installations-solaires","o":"http://192.168.184.1:3000/installations-solaires","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762938473958}
-[00:20:26.159] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:20:26.335] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:20:26.335] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/installations-solaires","route":"/installations-solaires"}
-[00:20:26.335] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/installations-solaires color: rgb(120, 120, 120) color: inherit {"dp":"/installations-solaires","o":"http://192.168.184.1:3000/installations-solaires","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762938486008}
-[00:20:33.508] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:20:33.659] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:20:33.659] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/installations-solaires","route":"/installations-solaires"}
-[00:20:33.659] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/installations-solaires color: rgb(120, 120, 120) color: inherit {"dp":"/installations-solaires","o":"http://192.168.184.1:3000/installations-solaires","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762938493346}
-[00:25:47.706] Server  LOG      ✓ Compiled in 769ms
-[00:26:28.629] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762938847736}
-[00:26:48.988] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:26:48.988] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/installations-solaires color: rgb(120, 120, 120) color: inherit {"dp":"/installations-solaires","o":"http://192.168.184.1:3000/installations-solaires","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762938868654}
-[00:26:52.435] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:26:52.984] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:26:52.984] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/installations-solaires","route":"/installations-solaires"}
-[00:26:52.984] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/installations-solaires color: rgb(120, 120, 120) color: inherit {"dp":"/installations-solaires","o":"http://192.168.184.1:3000/installations-solaires","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762938872671}
-[00:28:41.649] Server  LOG      ✓ Compiled in 626ms
-[00:28:46.271] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:28:46.461] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:28:46.461] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/installations-solaires","route":"/installations-solaires"}
-[00:28:46.461] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/installations-solaires color: rgb(120, 120, 120) color: inherit {"dp":"/installations-solaires","o":"http://192.168.184.1:3000/installations-solaires","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762938986146}
-[00:28:49.107] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762938988780}
-[00:28:51.609] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[00:28:51.609] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/installations-solaires color: rgb(120, 120, 120) color: inherit {"dp":"/installations-solaires","o":"http://192.168.184.1:3000/installations-solaires","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762938991183}
-[00:28:53.315] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762938992984}
-[00:28:54.642] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/structuresmetal color: rgb(120, 120, 120) color: inherit {"dp":"/structuresmetal","o":"http://192.168.184.1:3000/structuresmetal","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762938994306}
-[00:30:16.835] Server  LOG      ✓ Compiled in 232ms
-[00:30:28.090] Server  LOG      ✓ Compiled in 288ms
-[00:33:39.948] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762939279600}
-[00:33:47.254] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/structuresmetal color: rgb(120, 120, 120) color: inherit {"dp":"/structuresmetal","o":"http://192.168.184.1:3000/structuresmetal","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762939286928}
-[00:34:32.851] Server  LOG      ✓ Compiled in 191ms
-[00:34:35.509] Server  LOG      ✓ Compiled in 190ms
-[00:34:48.063] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762939347734}
-[00:34:51.802] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/structuresmetal color: rgb(120, 120, 120) color: inherit {"dp":"/structuresmetal","o":"http://192.168.184.1:3000/structuresmetal","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762939351480}
-[00:37:29.540] Server  LOG      ✓ Compiled in 966ms
-[00:37:59.527] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762939539196}
-[00:40:51.510] Server  LOG      ✓ Compiled in 1794ms
-[00:40:59.713] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/installations-solaires color: rgb(120, 120, 120) color: inherit {"dp":"/installations-solaires","o":"http://192.168.184.1:3000/installations-solaires","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762939719394}
-[00:41:19.734] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762939739407}
-[00:41:57.676] Server  LOG      ✓ Compiled in 406ms
-[00:42:31.191] Server  LOG      ✓ Compiled in 418ms
-[00:46:25.082] Server  LOG      ✓ Compiled in 5s
-[00:47:12.637] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/installations-solaires color: rgb(120, 120, 120) color: inherit {"dp":"/installations-solaires","o":"http://192.168.184.1:3000/installations-solaires","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762940092323}
-[00:47:20.212] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762940099558}
-[00:47:26.329] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/infrastructures-hydrauliques color: rgb(120, 120, 120) color: inherit {"dp":"/infrastructures-hydrauliques","o":"http://192.168.184.1:3000/infrastructures-hydrauliques","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762940106008}
-[00:47:33.399] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762940113077}
-[00:47:36.954] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/maintenance-industrielle color: rgb(120, 120, 120) color: inherit {"dp":"/maintenance-industrielle","o":"http://192.168.184.1:3000/maintenance-industrielle","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762940116629}
-[00:47:43.988] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762940123653}
-[00:47:47.716] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/installations-electriques color: rgb(120, 120, 120) color: inherit {"dp":"/installations-electriques","o":"http://192.168.184.1:3000/installations-electriques","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762940127400}
-[00:47:51.665] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762940131346}
-[00:51:11.439] Server  LOG      ✓ Compiled in 1384ms
-[00:51:12.795] Server  LOG      ✓ Compiled in 422ms
-[00:51:24.086] Server  LOG      ✓ Compiled in 428ms
-[00:51:24.946] Server  LOG      ✓ Compiled in 134ms
-[00:51:28.179] Server  LOG      ✓ Compiled in 217ms
-[00:51:34.082] Server  LOG      ✓ Compiled in 3s
-[00:51:45.835] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/structuresmetal color: rgb(120, 120, 120) color: inherit {"dp":"/structuresmetal","o":"http://192.168.184.1:3000/structuresmetal","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762940365519}
-[00:51:59.291] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762940378942}
-[00:52:27.352] Server  LOG      ✓ Compiled in 321ms
-[00:52:39.513] Server  LOG      ✓ Compiled in 205ms
-[00:52:51.328] Server  LOG      ✓ Compiled in 257ms
-[00:52:57.504] Server  LOG      ✓ Compiled in 206ms
-[00:53:00.820] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/infrastructures-hydrauliques color: rgb(120, 120, 120) color: inherit {"dp":"/infrastructures-hydrauliques","o":"http://192.168.184.1:3000/infrastructures-hydrauliques","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762940440501}
-[00:53:03.068] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762940442681}
-[00:53:04.814] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/maintenance-industrielle color: rgb(120, 120, 120) color: inherit {"dp":"/maintenance-industrielle","o":"http://192.168.184.1:3000/maintenance-industrielle","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762940444501}
-[00:53:06.059] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762940445742}
-[00:53:07.987] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/installations-electriques color: rgb(120, 120, 120) color: inherit {"dp":"/installations-electriques","o":"http://192.168.184.1:3000/installations-electriques","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762940447669}
-[00:53:28.388] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762940468029}
-[00:53:30.987] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:53:31.477] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:53:31.477] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/projets/panneaux-solaires","route":"/projets/panneaux-solaires"}
-[00:53:31.477] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/projets/panneaux-solaires color: rgb(120, 120, 120) color: inherit {"dp":"/projets/panneaux-solaires","o":"http://192.168.184.1:3000/projets/panneaux-solaires","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762940471163}
-[00:53:33.029] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:53:33.336] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:53:33.336] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:53:33.336] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762940473022}
-[00:58:46.982] Server  LOG      ✓ Compiled in 2.9s
-[00:59:00.460] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:59:00.713] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:59:00.713] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:59:00.713] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762940800388}
-[01:00:09.843] Server  LOG      ✓ Compiled in 1383ms
-[01:00:11.937] Server  LOG      ✓ Compiled in 1188ms
-[01:02:41.496] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[01:02:41.496] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/structuresmetal color: rgb(120, 120, 120) color: inherit {"dp":"/structuresmetal","o":"http://192.168.184.1:3000/structuresmetal","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762941021175}
-[01:03:04.114] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762941043790}
-[01:26:47.734] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/installations-solaires color: rgb(120, 120, 120) color: inherit {"dp":"/installations-solaires","o":"http://192.168.184.1:3000/installations-solaires","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762942467412}
-[01:27:00.694] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:27:01.499] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:27:01.500] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/installations-solaires","route":"/installations-solaires"}
-[01:27:01.500] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/installations-solaires color: rgb(120, 120, 120) color: inherit {"dp":"/installations-solaires","o":"http://192.168.184.1:3000/installations-solaires","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762942481140}
-[01:27:09.571] Server  LOG      ✓ Compiled in 1643ms
-[01:27:11.778] Server  LOG      ✓ Compiled in 291ms
-[01:27:13.454] Server  LOG      ✓ Compiled in 312ms
-[01:27:19.598] Server  LOG      ✓ Compiled in 298ms
-[01:27:21.274] Server  LOG      ✓ Compiled in 714ms
-[01:27:26.061] Server  LOG      ✓ Compiled in 2.3s
-[01:27:26.981] Server  LOG      ✓ Compiled in 303ms
-[01:27:30.363] Server  LOG      ✓ Compiled in 415ms
-[01:27:30.376] Browser ERROR   ./Downloads/code (2)/app/installations-solaires/page.tsx:13:3
-Parsing ecmascript source code failed
-  11 |   "/p6.jpg",
-  12 |   ""
-> 13 |   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.53%20%284%29-KnMkvbTIvqdQH6A8TFJx7GVqbQrfH1.jpeg",
-     |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  14 |   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.52%20%284%29-tRBRTrPnn6leOUGcqtlqXx9r2ZwFyg.jpeg",
-  15 | ]
-  16 |
-
-Expected ',', got 'string literal (https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.53%20%284%29-KnMkvbTIvqdQH6A8TFJx7GVqbQrfH1.jpeg, "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.53%20%284%29-KnMkvbTIvqdQH6A8TFJx7GVqbQrfH1.jpeg")'
-
-Import traces:
-  Client Component Browser:
-    ./Downloads/code (2)/app/installations-solaires/page.tsx [Client Component Browser]
-    ./Downloads/code (2)/app/installations-solaires/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Downloads/code (2)/app/installations-solaires/page.tsx [Client Component SSR]
-    ./Downloads/code (2)/app/installations-solaires/page.tsx [Server Component]
-[01:27:32.825] Server  LOG      ✓ Compiled in 423ms
-[01:27:34.757] Server  LOG      ✓ Compiled in 364ms
-[01:27:37.747] Server  LOG      ✓ Compiled in 208ms
-[01:27:43.707] Server  LOG      ✓ Compiled in 288ms
-[01:28:02.810] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:28:03.063] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:28:03.063] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/installations-solaires","route":"/installations-solaires"}
-[01:28:03.063] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/installations-solaires color: rgb(120, 120, 120) color: inherit {"dp":"/installations-solaires","o":"http://192.168.184.1:3000/installations-solaires","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762942542740}
-[01:28:37.831] Server  LOG      ✓ Compiled in 1441ms
-[01:28:44.651] Server  LOG      ✓ Compiled in 255ms
-[01:28:46.768] Server  LOG      ✓ Compiled in 520ms
-[01:28:57.305] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:28:57.571] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:28:57.571] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/installations-solaires","route":"/installations-solaires"}
-[01:28:57.571] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/installations-solaires color: rgb(120, 120, 120) color: inherit {"dp":"/installations-solaires","o":"http://192.168.184.1:3000/installations-solaires","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762942597248}
-[01:29:19.978] Server  LOG      ✓ Compiled in 426ms
-[01:29:32.534] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762942632198}
-[01:29:34.999] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[01:29:34.999] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/installations-solaires color: rgb(120, 120, 120) color: inherit {"dp":"/installations-solaires","o":"http://192.168.184.1:3000/installations-solaires","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762942634667}
-[01:29:42.219] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762942639855}
-[01:29:43.442] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/infrastructures-hydrauliques color: rgb(120, 120, 120) color: inherit {"dp":"/infrastructures-hydrauliques","o":"http://192.168.184.1:3000/infrastructures-hydrauliques","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762942643127}
-[01:32:19.579] Server  LOG      ✓ Compiled in 4.1s
-[01:32:20.230] Server  LOG      ✓ Compiled in 847ms
-[01:32:22.432] Server  LOG      ✓ Compiled in 378ms
-[01:32:25.996] Server  LOG      ✓ Compiled in 1262ms
-[01:32:29.797] Server  LOG      ✓ Compiled in 666ms
-[01:33:52.103] Server  LOG      ✓ Compiled in 6.5s
-[01:33:59.318] Server  LOG      ✓ Compiled in 1109ms
-[01:34:02.410] Server  LOG      ✓ Compiled in 925ms
-[01:34:05.308] Server  LOG      ✓ Compiled in 1273ms
-[01:34:06.626] Server  LOG      ✓ Compiled in 729ms
-[01:35:13.573] Server  LOG      ✓ Compiled in 4.7s
-[01:35:15.661] Server  LOG      ✓ Compiled in 487ms
-[01:35:24.953] Browser ERROR   ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx:64:15
-Parsing ecmascript source code failed
-  62 |               "Études hydrauliques et conception des réseaux",
-  63 |               "forage"
-> 64 |               "Réalisation de stations de pompage et réservoirs",
-     |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  65 |               "Systèmes de traitement et d’assainissement",
-  66 |               "Maintenance et contrôle de performance",
-  67 |             ].map((item, i) => (
-
-Expected '</', got 'string literal (Réalisation de stations de pompage et réservoirs, "Réalisation de stations de pompage et réservoirs")'
-
-Import traces:
-  Client Component Browser:
-    ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx [Client Component Browser]
-    ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx [Client Component SSR]
-    ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx [Server Component]
-[01:35:28.168] Server  LOG      ✓ Compiled in 816ms
-[01:35:34.967] Server  LOG      ✓ Compiled in 424ms
-[01:35:38.740] Server  LOG      ✓ Compiled in 757ms
-[01:35:52.687] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:35:53.267] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:35:53.267] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/infrastructures-hydrauliques","route":"/infrastructures-hydrauliques"}
-[01:35:53.267] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/infrastructures-hydrauliques color: rgb(120, 120, 120) color: inherit {"dp":"/infrastructures-hydrauliques","o":"http://192.168.184.1:3000/infrastructures-hydrauliques","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762943012757}
-[01:36:03.202] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[01:36:03.203] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762943022829}
-[01:36:19.838] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:36:20.128] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:36:20.128] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/gestion-projets","route":"/gestion-projets"}
-[01:36:20.128] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/gestion-projets color: rgb(120, 120, 120) color: inherit {"dp":"/gestion-projets","o":"http://192.168.184.1:3000/gestion-projets","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762943039798}
-[01:36:23.316] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:36:23.901] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:36:23.901] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[01:36:23.901] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762943043578}
-[01:36:36.887] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[01:36:36.888] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/maintenance-industrielle color: rgb(120, 120, 120) color: inherit {"dp":"/maintenance-industrielle","o":"http://192.168.184.1:3000/maintenance-industrielle","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762943056572}
-[01:38:20.929] Server  LOG      ✓ Compiled in 419ms
-[01:38:26.923] Browser ERROR   ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx:11:3
-Parsing ecmascript source code failed
-   9 |   "/h2.jpeg",
-  10 |   ""
-> 11 |   "/h3.jpeg",
-     |   ^^^^^^^^^^
-  12 |     "/h4.jpeg",
-  13 |     "/h5.jpeg",
-  14 |     "/h6.jpeg",
-
-Expected ',', got 'string literal (/h3.jpeg, "/h3.jpeg")'
-
-Import traces:
-  Client Component Browser:
-    ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx [Client Component Browser]
-    ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx [Client Component SSR]
-    ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx [Server Component]
-[01:38:26.923] Browser ERROR   ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx:11:3
-Parsing ecmascript source code failed
-   9 |   "/h2.jpeg",
-  10 |   "f    "
-> 11 |   "/h3.jpeg",
-     |   ^^^^^^^^^^
-  12 |     "/h4.jpeg",
-  13 |     "/h5.jpeg",
-  14 |     "/h6.jpeg",
-
-Expected ',', got 'string literal (/h3.jpeg, "/h3.jpeg")'
-
-Import traces:
-  Client Component Browser:
-    ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx [Client Component Browser]
-    ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx [Client Component SSR]
-    ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx [Server Component]
-[01:38:26.923] Browser ERROR   ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx:11:3
-Parsing ecmascript source code failed
-   9 |   "/h2.jpeg",
-  10 |   "f4"
-> 11 |   "/h3.jpeg",
-     |   ^^^^^^^^^^
-  12 |     "/h4.jpeg",
-  13 |     "/h5.jpeg",
-  14 |     "/h6.jpeg",
-
-Expected ',', got 'string literal (/h3.jpeg, "/h3.jpeg")'
-
-Import traces:
-  Client Component Browser:
-    ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx [Client Component Browser]
-    ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx [Client Component SSR]
-    ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx [Server Component]
-[01:38:26.923] Browser ERROR   ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx:11:3
-Parsing ecmascript source code failed
-   9 |   "/h2.jpeg",
-  10 |   "f4."
-> 11 |   "/h3.jpeg",
-     |   ^^^^^^^^^^
-  12 |     "/h4.jpeg",
-  13 |     "/h5.jpeg",
-  14 |     "/h6.jpeg",
-
-Expected ',', got 'string literal (/h3.jpeg, "/h3.jpeg")'
-
-Import traces:
-  Client Component Browser:
-    ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx [Client Component Browser]
-    ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx [Client Component SSR]
-    ./Downloads/code (2)/app/infrastructures-hydrauliques/page.tsx [Server Component]
-[01:42:18.553] Server  LOG      ✓ Compiled in 1240ms
-[01:42:21.389] Server  LOG      ✓ Compiled in 1109ms
-[01:42:22.172] Server  LOG      ✓ Compiled in 471ms
-[01:42:26.504] Server  LOG      ✓ Compiled in 1042ms
-[01:42:31.532] Server  LOG      ✓ Compiled in 273ms
-[01:42:43.239] Server  LOG      ✓ Compiled in 245ms
-[01:42:46.389] Server  LOG      ✓ Compiled in 544ms
-[01:42:50.425] Server  LOG      ○ Compiling /_error ...
-[01:42:50.668] Browser ERROR   ./Downloads/code (2)/app/maintenance-industrielle/page.tsx:13:3
-Parsing ecmascript source code failed
-  11 |   "/i4.jpeg",
-  12 |   ""
-> 13 |   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.53%20%284%29-KnMkvbTIvqdQH6A8TFJx7GVqbQrfH1.jpeg",
-     |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  14 |   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.52%20%284%29-tRBRTrPnn6leOUGcqtlqXx9r2ZwFyg.jpeg",
-  15 | ]
-  16 |
-
-Expected ',', got 'string literal (https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.53%20%284%29-KnMkvbTIvqdQH6A8TFJx7GVqbQrfH1.jpeg, "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.53%20%284%29-KnMkvbTIvqdQH6A8TFJx7GVqbQrfH1.jpeg")'
-
-Import traces:
-  Client Component Browser:
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Client Component Browser]
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Client Component SSR]
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Server Component]
-[01:42:50.668] Browser ERROR   ./Downloads/code (2)/app/maintenance-industrielle/page.tsx:13:3
-Parsing ecmascript source code failed
-  11 |   "/i4.jpeg",
-  12 |   ""
-> 13 |   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.53%20%284%29-KnMkvbTIvqdQH6A8TFJx7GVqbQrfH1.jpeg",
-     |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  14 |   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.52%20%284%29-tRBRTrPnn6leOUGcqtlqXx9r2ZwFyg.jpeg",
-  15 | ]
-  16 |
-
-Expected ',', got 'string literal (https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.53%20%284%29-KnMkvbTIvqdQH6A8TFJx7GVqbQrfH1.jpeg, "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.53%20%284%29-KnMkvbTIvqdQH6A8TFJx7GVqbQrfH1.jpeg")'
-
-Import traces:
-  Client Component Browser:
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Client Component Browser]
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Client Component SSR]
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Server Component]
-[01:42:53.242] Server  LOG      ✓ Compiled in 5.8s
-[01:42:54.116] Server  ERROR    ⨯ ./Downloads/code (2)/app/maintenance-industrielle/page.tsx:14:3
-Parsing ecmascript source code failed
-  12 |   "/i5.jpeg",
-  13 |   ""
-> 14 |   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.53%20%284%29-KnMkvbTIvqdQH6A8TFJx7GVqbQrfH1.jpeg",
-     |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  15 |   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.52%20%284%29-tRBRTrPnn6leOUGcqtlqXx9r2ZwFyg.jpeg",
-  16 | ]
-  17 |
-
-Expected ',', got 'string literal (https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.53%20%284%29-KnMkvbTIvqdQH6A8TFJx7GVqbQrfH1.jpeg, "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.53%20%284%29-KnMkvbTIvqdQH6A8TFJx7GVqbQrfH1.jpeg")'
-
-Import traces:
-  Client Component Browser:
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Client Component Browser]
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Client Component SSR]
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Server Component]
-
-
-[01:42:58.718] Browser ERROR   ./Downloads/code (2)/app/maintenance-industrielle/page.tsx:14:3
-Parsing ecmascript source code failed
-  12 |   "/i5.jpeg",
-  13 |   ""
-> 14 |   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.53%20%284%29-KnMkvbTIvqdQH6A8TFJx7GVqbQrfH1.jpeg",
-     |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  15 |   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.52%20%284%29-tRBRTrPnn6leOUGcqtlqXx9r2ZwFyg.jpeg",
-  16 | ]
-  17 |
-
-Expected ',', got 'string literal (https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.53%20%284%29-KnMkvbTIvqdQH6A8TFJx7GVqbQrfH1.jpeg, "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.53%20%284%29-KnMkvbTIvqdQH6A8TFJx7GVqbQrfH1.jpeg")'
-
-Import traces:
-  Client Component Browser:
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Client Component Browser]
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Client Component SSR]
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Server Component]
-[01:42:58.718] Browser ERROR   ./Downloads/code (2)/app/maintenance-industrielle/page.tsx:14:3
-Parsing ecmascript source code failed
-  12 |   "/i5.jpeg",
-  13 |   ""
-> 14 |   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.53%20%284%29-KnMkvbTIvqdQH6A8TFJx7GVqbQrfH1.jpeg",
-     |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  15 |   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.52%20%284%29-tRBRTrPnn6leOUGcqtlqXx9r2ZwFyg.jpeg",
-  16 | ]
-  17 |
-
-Expected ',', got 'string literal (https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.53%20%284%29-KnMkvbTIvqdQH6A8TFJx7GVqbQrfH1.jpeg, "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.53%20%284%29-KnMkvbTIvqdQH6A8TFJx7GVqbQrfH1.jpeg")'
-
-Import traces:
-  Client Component Browser:
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Client Component Browser]
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Client Component SSR]
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Server Component]
-[01:42:58.718] Browser ERROR   ./Downloads/code (2)/app/maintenance-industrielle/page.tsx:14:3
-Parsing ecmascript source code failed
-  12 |   "/i5.jpeg",
-  13 |   ""
-> 14 |   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.53%20%284%29-KnMkvbTIvqdQH6A8TFJx7GVqbQrfH1.jpeg",
-     |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  15 |   "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.52%20%284%29-tRBRTrPnn6leOUGcqtlqXx9r2ZwFyg.jpeg",
-  16 | ]
-  17 |
-
-Expected ',', got 'string literal (https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.53%20%284%29-KnMkvbTIvqdQH6A8TFJx7GVqbQrfH1.jpeg, "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.53%20%284%29-KnMkvbTIvqdQH6A8TFJx7GVqbQrfH1.jpeg")'
-
-Import traces:
-  Client Component Browser:
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Client Component Browser]
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Client Component SSR]
-    ./Downloads/code (2)/app/maintenance-industrielle/page.tsx [Server Component]
-[01:42:59.481] Server  LOG      ✓ Compiled in 28ms
-[01:43:03.065] Server  LOG      ✓ Compiled in 384ms
-[01:43:04.745] Server  LOG      ✓ Compiled in 507ms
-[01:43:06.674] Server  LOG      ✓ Compiled in 415ms
-[01:43:11.136] Server  LOG      ✓ Compiled in 542ms
-[01:43:26.783] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:43:29.506] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+[00:00:29.452] Server  LOG      ✓ Ready in 20.2s
+[00:00:52.111] Server  LOG      ○ Compiling / ...
+[00:01:05.337] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:05.770] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:01:05.770] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -561,162 +16,350 @@ It can also happen if the client has a browser extension installed which messes 
 %s%s https://react.dev/link/hydration-mismatch 
 
   ...
-    <LoadingBoundary name="maintenanc..." loading={null}>
-      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
-        <RedirectBoundary>
-          <RedirectErrorBoundary router={{...}}>
-            <InnerLayoutRouter url="/maintenan..." tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
-              <SegmentViewNode type="page" pagePath="/Downloads...">
-                <SegmentTrieNode>
-                <ClientPageRoot Component={function MaintenanceIndustriellePage} serverProvidedParams={{...}}>
-                  <MaintenanceIndustriellePage params={Promise} searchParams={Promise}>
-                    <div className="min-h-scre...">
-                      <section className="relative p...">
-                        <div className="max-w-6xl ...">
-                          <h1>
-                          <p>
-                          <div className="grid grid-...">
-                            <div>
-                            <div>
-                            <div>
-                            <div>
-                            <div>
-                            <div>
-                            <div className="relative h...">
-                              <div
-                                className="absolute inset-0 bg-cover bg-center"
-                                style={{
-+                                 backgroundImage: "url('/app')"
-+                                 filter: "brightness(0.75)"
--                                 filter: "brightness(0.75)"
--                                 background-image: "url(\"\")"
-                                }}
-                              >
-                              ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <RootLayout>
+                      <html lang="fr" className="__variable...">
+                        <body className="font-sans ..." suppressHydrationWarning={true}>
+                          <TopBar>
+                          <Header>
                           ...
-                      ...
-              ...
-            ...
+                            <Home>
+                              <Home>
+                                <Hero>
+                                  <section id="hero" className="relative w..." style={{...}}>
+                                    <div className="flex flex-..." style={{...}}>
+                                      <div className="relative f..." style={{...}}>
+                                        <div>
+                                        <div>
+                                        <div>
+                                        <button
+                                          onClick={function scrollDown}
+                                          aria-label="Defiler"
+                                          className="absolute hidden lg:flex items-center justify-center"
+                                          style={{width:56,height:56,border:"2px solid ...",left:0,bottom:0,background:"#fff",transition:"backg..."}}
+                                          onMouseEnter={function onMouseEnter}
+                                          onMouseLeave={function onMouseLeave}
+-                                         fdprocessedid="2e1mzd"
+                                        >
+                                      <div className="flex-1 fle..." style={{...}}>
+                                        <div>
+                                        <div className="mx-auto lg..." style={{display:"grid", ...}}>
+                                          <p>
+                                          <div>
+                                            <p>
+                                            <button
+                                              onClick={function scrollDown}
+                                              style={{display:"inline-flex",alignItems:"center",gap:4,fontSize:"0.78rem",fontWeight:700, ...}}
+                                              onMouseEnter={function onMouseEnter}
+                                              onMouseLeave={function onMouseLeave}
+-                                             fdprocessedid="7x6r9f"
+                                            >
+                                        ...
+                                    ...
+                              <About>
+                              <WhyChooseUs>
+                              <Services>
+                              <DirectorMessage>
+                              <TeamPresentation>
+                              <VehicleFleet>
+                              <Home>
+                                <Partners>
+                                  <section className="py-12 bg-w...">
+                                    <div className="container ...">
+                                      <div>
+                                      <div className="relative g...">
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-trans..."
+                                          aria-label="Previous partners"
+-                                         fdprocessedid="95u7p"
+                                        >
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:transl..."
+                                          aria-label="Next partners"
+-                                         fdprocessedid="9z0olt"
+                                        >
+                                        ...
+                              ...
+                          <footer>
+                          <ClientWrapper>
+                            <WhatsAppButton>
+                            <AIChat>
+                              <button
+                                onClick={function onClick}
+                                className="fixed bottom-24 right-5 z-50 bg-[#4ade80] hover:bg-[#3bb86a] text-white p-4..."
+                                aria-label="Assistant IA Manding"
+-                               fdprocessedid="m6t4y4"
+                              >
+                          ...
+                  ...
 
-[01:43:29.506] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:43:29.506] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/maintenance-industrielle","route":"/maintenance-industrielle"}
-[01:43:29.506] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/maintenance-industrielle color: rgb(120, 120, 120) color: inherit {"dp":"/maintenance-industrielle","o":"http://192.168.184.1:3000/maintenance-industrielle","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762943468880}
-[01:43:46.797] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:43:47.010] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:43:47.010] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/maintenance-industrielle","route":"/maintenance-industrielle"}
-[01:43:47.010] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/maintenance-industrielle color: rgb(120, 120, 120) color: inherit {"dp":"/maintenance-industrielle","o":"http://192.168.184.1:3000/maintenance-industrielle","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762943486695}
-[01:43:54.545] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762943494216}
-[01:43:58.352] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[01:43:58.352] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/installations-electriques color: rgb(120, 120, 120) color: inherit {"dp":"/installations-electriques","o":"http://192.168.184.1:3000/installations-electriques","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762943498036}
-[01:44:00.744] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762943500414}
-[01:44:04.367] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/maintenance-industrielle color: rgb(120, 120, 120) color: inherit {"dp":"/maintenance-industrielle","o":"http://192.168.184.1:3000/maintenance-industrielle","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762943504001}
-[01:44:08.370] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:44:08.575] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[01:44:08.575] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/maintenance-industrielle","route":"/maintenance-industrielle"}
-[01:44:08.575] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/maintenance-industrielle color: rgb(120, 120, 120) color: inherit {"dp":"/maintenance-industrielle","o":"http://192.168.184.1:3000/maintenance-industrielle","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762943508255}
-[01:44:39.615] Server  LOG      ✓ Compiled in 1569ms
-[01:44:40.188] Server  LOG      ✓ Compiled in 471ms
-[01:44:44.922] Server  LOG      ✓ Compiled in 1033ms
-[01:45:04.514] Server  LOG      ✓ Compiled in 2.2s
-[01:48:09.219] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762943748868}
-[02:02:31.976] Server  LOG      ✓ Compiled in 2.9s
-[02:02:33.885] Server  LOG      ✓ Compiled in 681ms
-[02:02:37.193] Server  LOG      ✓ Compiled in 1018ms
-[02:02:40.019] Server  LOG      ✓ Compiled in 1123ms
-[02:02:53.892] Server  LOG      ✓ Compiled in 243ms
-[02:02:57.055] Server  LOG      ✓ Compiled in 300ms
-[02:02:58.837] Server  LOG      ✓ Compiled in 297ms
-[02:03:05.338] Server  LOG      ✓ Compiled in 1330ms
-[02:03:05.816] Server  LOG      ✓ Compiled in 321ms
-[02:03:12.918] Server  LOG      ✓ Compiled in 317ms
-[02:03:22.486] Server  LOG      ✓ Compiled in 375ms
-[02:03:23.673] Server  LOG      ✓ Compiled in 330ms
-[02:03:25.924] Server  LOG      ✓ Compiled in 404ms
-[02:03:33.687] Server  LOG      ✓ Compiled in 217ms
-[02:03:38.919] Server  LOG      ✓ Compiled in 324ms
-[02:03:41.606] Server  LOG      ✓ Compiled in 321ms
-[02:05:05.654] Server  LOG      ✓ Compiled in 11.6s
-[02:05:24.469] Server  LOG      ✓ Compiled in 405ms
-[02:05:41.743] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:05:42.404] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[02:05:42.404] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[02:05:42.404] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762944802083}
-[02:06:10.782] Server  LOG      ✓ Compiled in 1663ms
-[02:06:12.414] Server  LOG      ✓ Compiled in 1499ms
-[02:06:34.066] Browser ERROR   uncaughtError: Error: An unknown Component is an async Client Component. Only Server Components can be async at the moment. This error is often caused by accidentally adding `'use client'` to a module that was originally written for the server.
-[02:06:41.800] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:06:42.093] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[02:06:42.093] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/infrastructures-hydrauliques","route":"/infrastructures-hydrauliques"}
-[02:06:42.093] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/infrastructures-hydrauliques color: rgb(120, 120, 120) color: inherit {"dp":"/infrastructures-hydrauliques","o":"http://192.168.184.1:3000/infrastructures-hydrauliques","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762944861775}
-[02:06:45.212] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
-[02:06:45.212] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762944864810}
-[02:07:44.360] Server  LOG      ✓ Compiled in 1653ms
-[02:07:46.204] Server  LOG      ✓ Compiled in 988ms
-[02:07:46.991] Server  LOG      ✓ Compiled in 406ms
-[02:07:49.396] Server  LOG      ✓ Compiled in 536ms
-[02:07:56.878] Server  LOG      ✓ Compiled in 1436ms
-[02:08:10.992] Server  LOG      ✓ Compiled in 2.9s
-[02:08:16.692] Server  LOG      ✓ Compiled in 1611ms
-[02:08:49.028] Server  LOG      ✓ Compiled in 2.5s
-[02:09:18.439] Server  LOG      ✓ Compiled in 285ms
-[02:10:01.916] Server  LOG      ✓ Compiled in 3.9s
-[02:11:59.182] Server  LOG      ✓ Compiled in 2.9s
-[02:12:04.581] Server  LOG      ✓ Compiled in 4s
-[02:12:06.214] Server  LOG      ✓ Compiled in 1100ms
-[02:12:08.097] Server  LOG      ✓ Compiled in 305ms
-[02:12:10.068] Server  LOG      ✓ Compiled in 636ms
-[02:12:11.668] Server  LOG      ✓ Compiled in 382ms
-[02:12:20.151] Server  LOG      ✓ Compiled in 802ms
-[02:12:27.663] Server  LOG      ✓ Compiled in 757ms
-[02:12:33.881] Server  LOG      ✓ Compiled in 1616ms
-[02:12:34.662] Server  LOG      ✓ Compiled in 387ms
-[02:12:51.762] Server  LOG      ✓ Compiled in 1026ms
-[02:12:54.710] Server  LOG      ✓ Compiled in 1206ms
-[02:12:56.285] Server  LOG      ✓ Compiled in 785ms
-[02:13:08.049] Server  LOG      ✓ Compiled in 6.5s
-[02:13:09.826] Server  LOG      ✓ Compiled in 1073ms
-[02:13:11.824] Server  LOG      ✓ Compiled in 378ms
-[02:13:14.425] Server  LOG      ✓ Compiled in 467ms
-[02:13:18.612] Server  LOG      ✓ Compiled in 855ms
-[02:14:40.498] Server  LOG      ✓ Compiled in 4.2s
-[02:14:44.921] Server  LOG      ✓ Compiled in 789ms
-[02:14:48.488] Server  LOG      ✓ Compiled in 651ms
-[02:14:52.120] Server  LOG      ✓ Compiled in 1283ms
-[02:14:55.154] Server  LOG      ✓ Compiled in 583ms
-[02:15:12.468] Server  LOG      ✓ Compiled in 2.1s
-[02:15:24.340] Server  LOG      ✓ Compiled in 5.3s
-[02:15:26.608] Server  LOG      ✓ Compiled in 1288ms
-[02:15:49.958] Server  LOG      ✓ Compiled in 3.9s
-[02:15:59.840] Server  LOG      ✓ Compiled in 2.1s
-[02:16:33.551] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:19:20.201] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[02:19:20.221] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[02:19:20.229] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762945455389}
-[02:21:29.888] Server  LOG      ✓ Compiled in 4.1s
-[02:21:44.381] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. #projets
-[02:21:44.382] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. #contact
-[02:21:45.187] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. #projets
-[02:21:45.187] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. #contact
-[02:21:47.976] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. #projets
-[02:21:47.976] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. #contact
-[02:21:50.057] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. #projets
-[02:21:50.057] Browser ERROR   Encountered two children with the same key, `%s`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version. #contact
-[02:25:06.429] Server  LOG      ✓ Compiled in 2.6s
-[02:25:07.413] Server  LOG      ✓ Compiled in 605ms
-[02:25:10.739] Server  LOG      ✓ Compiled in 600ms
-[02:25:14.674] Server  LOG      ✓ Compiled in 569ms
-[02:25:22.256] Server  LOG      ✓ Compiled in 101ms
-[02:25:33.211] Server  LOG      ✓ Compiled in 2.4s
-[02:25:38.891] Server  LOG      ✓ Compiled in 842ms
-[02:25:47.689] Server  LOG      ✓ Compiled in 81ms
-[02:26:02.781] Server  LOG      ✓ Compiled in 3.2s
-[02:26:33.022] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:26:33.862] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[02:26:33.862] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/projets/menuiserie-metallique","route":"/projets/menuiserie-metallique"}
-[02:26:33.862] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/projets/menuiserie-metallique color: rgb(120, 120, 120) color: inherit {"dp":"/projets/menuiserie-metallique","o":"http://192.168.184.1:3000/projets/menuiserie-metallique","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762946053514}
-[02:26:57.613] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[02:26:57.928] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[02:26:57.928] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[02:26:57.928] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://192.168.184.1:3000/#apropos color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://192.168.184.1:3000/#apropos","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1762946077606}
-[02:27:00.908] Browser WARN    Image with src "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.54%20%281%29-bYo8Zq6gvzjctZvly4TzWLO4WTlXiN.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
-Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:01:05.771] Browser WARN    Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:05.771] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:01:05.771] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:01:05.773] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1789556098786} /_vercel/insights/view
+[00:03:50.392] Browser WARN    Image with src "/somagep.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:50.393] Browser WARN    Image with src "/usaid.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:50.393] Browser WARN    Image with src "/edm.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:50.393] Browser WARN    Image with src "/onu.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:50.393] Browser WARN    Image with src "/pnud.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:50.393] Browser WARN    Image with src "/ministere.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:50.393] Browser WARN    Image with src "/frorex.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:50.393] Browser WARN    Image with src "/canada.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:03:52.863] Browser WARN    Image with src "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.21-WmLAOu7klWKkjLUtt0NS0aOyWUGRcd.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:16:28.687] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:16:28.687] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/structuresmetal color: rgb(120, 120, 120) color: inherit {"dp":"/structuresmetal","o":"http://localhost:3000/structuresmetal","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1789557021696} /_vercel/insights/view
+[00:16:33.273] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/btp color: rgb(120, 120, 120) color: inherit {"dp":"/btp","o":"http://localhost:3000/btp","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1789557026295} /_vercel/insights/view
+[00:16:37.275] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/adduction-eau color: rgb(120, 120, 120) color: inherit {"dp":"/adduction-eau","o":"http://localhost:3000/adduction-eau","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1789557030296} /_vercel/insights/view
+[00:22:18.393] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/#hero color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#hero","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1789557371383} /_vercel/insights/view
+[00:22:22.090] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/structuresmetal color: rgb(120, 120, 120) color: inherit {"dp":"/structuresmetal","o":"http://localhost:3000/structuresmetal","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1789557375118} /_vercel/insights/view
+[00:27:08.819] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/#hero color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#hero","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1789557661826} /_vercel/insights/view
+[00:27:14.063] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:14.463] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <RootLayout>
+                      <html lang="fr" className="__variable...">
+                        <body className="font-sans ..." suppressHydrationWarning={true}>
+                          <TopBar>
+                          <Header>
+                          ...
+                            <Home>
+                              <Home>
+                                <Hero>
+                                  <section id="hero" className="relative w..." style={{...}}>
+                                    <div className="flex flex-..." style={{...}}>
+                                      <div className="relative f..." style={{...}}>
+                                        <div>
+                                        <div>
+                                        <div>
+                                        <button
+                                          onClick={function scrollDown}
+                                          aria-label="Defiler"
+                                          className="absolute hidden lg:flex items-center justify-center"
+                                          style={{width:56,height:56,border:"2px solid ...",left:0,bottom:0,background:"#fff",transition:"backg..."}}
+                                          onMouseEnter={function onMouseEnter}
+                                          onMouseLeave={function onMouseLeave}
+-                                         fdprocessedid="q7eve"
+                                        >
+                                      <div className="flex-1 fle..." style={{...}}>
+                                        <div>
+                                        <div className="mx-auto lg..." style={{display:"grid", ...}}>
+                                          <p>
+                                          <div>
+                                            <p>
+                                            <button
+                                              onClick={function scrollDown}
+                                              style={{display:"inline-flex",alignItems:"center",gap:4,fontSize:"0.78rem",fontWeight:700, ...}}
+                                              onMouseEnter={function onMouseEnter}
+                                              onMouseLeave={function onMouseLeave}
+-                                             fdprocessedid="ouztk"
+                                            >
+                                        ...
+                                    ...
+                              <About>
+                              <WhyChooseUs>
+                              <Services>
+                              <DirectorMessage>
+                              <TeamPresentation>
+                              <VehicleFleet>
+                              <Home>
+                                <Partners>
+                                  <section className="py-12 bg-w...">
+                                    <div className="container ...">
+                                      <div>
+                                      <div className="relative g...">
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-trans..."
+                                          aria-label="Previous partners"
+-                                         fdprocessedid="2g0suxs"
+                                        >
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:transl..."
+                                          aria-label="Next partners"
+-                                         fdprocessedid="kitfij"
+                                        >
+                                        ...
+                              ...
+                          <footer>
+                          <ClientWrapper>
+                            <WhatsAppButton>
+                            <AIChat>
+                              <button
+                                onClick={function onClick}
+                                className="fixed bottom-24 right-5 z-50 bg-[#4ade80] hover:bg-[#3bb86a] text-white p-4..."
+                                aria-label="Assistant IA Manding"
+-                               fdprocessedid="elsuwd"
+                              >
+                          ...
+                  ...
+
+[00:27:14.463] Browser WARN    Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:27:14.463] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:14.463] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:27:14.463] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/#hero color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#hero","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1789557667482} /_vercel/insights/view
+[00:27:18.434] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:27:18.434] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/structuresmetal color: rgb(120, 120, 120) color: inherit {"dp":"/structuresmetal","o":"http://localhost:3000/structuresmetal","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1789557671441} /_vercel/insights/view
+[00:27:29.091] Browser WARN    Image with src "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.21-WmLAOu7klWKkjLUtt0NS0aOyWUGRcd.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:28:04.594] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/adduction-eau color: rgb(120, 120, 120) color: inherit {"dp":"/adduction-eau","o":"http://localhost:3000/adduction-eau","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1789557717626} /_vercel/insights/view
+[00:28:30.691] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/prestation-service color: rgb(120, 120, 120) color: inherit {"dp":"/prestation-service","o":"http://localhost:3000/prestation-service","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1789557743689} /_vercel/insights/view
+[00:28:53.187] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/menuiserie-aluminium color: rgb(120, 120, 120) color: inherit {"dp":"/menuiserie-aluminium","o":"http://localhost:3000/menuiserie-aluminium","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1789557766200} /_vercel/insights/view
+[00:29:21.724] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1789557794744} /_vercel/insights/view
+[03:55:26.683] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[119:01:12.227] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <SegmentViewNode type="layout" pagePath="layout.tsx">
+                    <SegmentTrieNode>
+                    <link>
+                    <RootLayout>
+                      <html lang="fr" className="__variable...">
+                        <body className="font-sans ..." suppressHydrationWarning={true}>
+                          <TopBar>
+                          <Header>
+                          ...
+                            <Home>
+                              <Home>
+                                <Hero>
+                                  <section id="hero" className="relative w..." style={{...}}>
+                                    <div className="flex flex-..." style={{...}}>
+                                      <div className="relative f..." style={{...}}>
+                                        <div>
+                                        <div>
+                                        <div>
+                                        <button
+                                          onClick={function scrollDown}
+                                          aria-label="Defiler"
+                                          className="absolute hidden lg:flex items-center justify-center"
+                                          style={{width:56,height:56,border:"2px solid ...",left:0,bottom:0,background:"#fff",transition:"backg..."}}
+                                          onMouseEnter={function onMouseEnter}
+                                          onMouseLeave={function onMouseLeave}
+-                                         fdprocessedid="3eweb"
+                                        >
+                                      <div className="flex-1 fle..." style={{...}}>
+                                        <div>
+                                        <div className="mx-auto lg..." style={{display:"grid", ...}}>
+                                          <p>
+                                          <div>
+                                            <p>
+                                            <button
+                                              onClick={function scrollDown}
+                                              style={{display:"inline-flex",alignItems:"center",gap:4,fontSize:"0.78rem",fontWeight:700, ...}}
+                                              onMouseEnter={function onMouseEnter}
+                                              onMouseLeave={function onMouseLeave}
+-                                             fdprocessedid="965pp"
+                                            >
+                                        ...
+                                    ...
+                              <About>
+                              <WhyChooseUs>
+                              <Services>
+                              <DirectorMessage>
+                              <TeamPresentation>
+                              <VehicleFleet>
+                              <Home>
+                                <Partners>
+                                  <section className="py-12 bg-w...">
+                                    <div className="container ...">
+                                      <div>
+                                      <div className="relative g...">
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-trans..."
+                                          aria-label="Previous partners"
+-                                         fdprocessedid="3i8ff"
+                                        >
+                                        <div>
+                                        <button
+                                          onClick={function onClick}
+                                          className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:transl..."
+                                          aria-label="Next partners"
+-                                         fdprocessedid="fvvmut"
+                                        >
+                                        ...
+                              ...
+                          <footer>
+                          <ClientWrapper>
+                            <WhatsAppButton>
+                            <AIChat>
+                              <button
+                                onClick={function onClick}
+                                className="fixed bottom-24 right-5 z-50 bg-[#4ade80] hover:bg-[#3bb86a] text-white p-4..."
+                                aria-label="Assistant IA Manding"
+-                               fdprocessedid="s2dod3"
+                              >
+                          ...
+                  ...
+
+[119:01:12.227] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[119:01:12.228] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[119:01:12.228] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1789584564991} /_vercel/insights/view
+[119:03:06.169] Browser WARN    Image with src "/logo.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[119:14:13.389] Browser WARN    Image with src "/somagep.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[119:14:13.392] Browser WARN    Image with src "/onu.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[119:14:13.393] Browser WARN    Image with src "/usaid.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[119:14:13.393] Browser WARN    Image with src "/edm.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[119:14:13.393] Browser WARN    Image with src "/pnud.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[119:14:13.393] Browser WARN    Image with src "/ministere.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[119:14:13.468] Browser WARN    Image with src "/frorex.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[119:14:13.468] Browser WARN    Image with src "/canada.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[119:14:13.468] Browser WARN    Image with src "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-04%20at%2017.02.21-WmLAOu7klWKkjLUtt0NS0aOyWUGRcd.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[119:14:18.056] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[119:14:18.057] Browser LOG     %c[Vercel Web Analytics]%c [view] http://localhost:3000/structuresmetal color: rgb(120, 120, 120) color: inherit {"dp":"/structuresmetal","o":"http://localhost:3000/structuresmetal","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1789985399175} /_vercel/insights/view

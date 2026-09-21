@@ -1,11 +1,9 @@
 "use client"
 
-import Image from "next/image"
-import Link from "next/link"
 import { Card } from "@/components/ui/card"
+import { ArrowRight } from "lucide-react"
+import Image from "next/image"
 import { useEffect, useRef, useState } from "react"
-import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
 
 const projects = [
   {
@@ -59,9 +57,6 @@ const projects = [
 ]
 
 export function Projects() {
-  const scrollContainerRef = useRef<HTMLDivElement>(null)
-  const [canScrollLeft, setCanScrollLeft] = useState(false)
-  const [canScrollRight, setCanScrollRight] = useState(true)
   const [isVisible, setIsVisible] = useState(false)
   const sectionRef = useRef<HTMLElement>(null)
 
@@ -82,37 +77,19 @@ export function Projects() {
     return () => observer.disconnect()
   }, [])
 
-  const checkScroll = () => {
-    if (scrollContainerRef.current) {
-      const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current
-      setCanScrollLeft(scrollLeft > 0)
-      setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 10)
-    }
-  }
-
-  useEffect(() => {
-    checkScroll()
-    const container = scrollContainerRef.current
-    if (container) {
-      container.addEventListener("scroll", checkScroll)
-      return () => container.removeEventListener("scroll", checkScroll)
-    }
-  }, [])
-
-  const scroll = (direction: "left" | "right") => {
-    if (scrollContainerRef.current) {
-      const scrollAmount = 400
-      const newScrollLeft =
-        scrollContainerRef.current.scrollLeft + (direction === "left" ? -scrollAmount : scrollAmount)
-      scrollContainerRef.current.scrollTo({
-        left: newScrollLeft,
-        behavior: "smooth",
-      })
-    }
+  const getGridClass = (index: number) => {
+    // First item is the hero (full width on mobile, 3 cols on desktop)
+    if (index === 0) return "md:col-span-3 md:row-span-2 h-[400px] md:h-[600px]"
+    // Next 3 items are standard 1 col
+    if (index >= 1 && index <= 3) return "md:col-span-1 h-[300px]"
+    // Item 4 spans 2 cols to create visual interest
+    if (index === 4) return "md:col-span-2 h-[300px]"
+    // Last item fills the remaining space
+    return "md:col-span-1 h-[300px]"
   }
 
   return (
-    <section ref={sectionRef} id="projets" className="py-20 md:py-28 bg-muted/30 overflow-hidden">
+    <section ref={sectionRef} id="projets" className="py-20 md:py-28 bg-muted/30">
       <div className="container mx-auto px-4">
         <div
           className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
@@ -123,68 +100,40 @@ export function Projects() {
           </p>
         </div>
 
-        <div className="relative">
-          {canScrollLeft && (
-            <Button
-              variant="outline"
-              size="icon"
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-12 w-12 rounded-full bg-white shadow-lg hover:scale-110 transition-transform"
-              onClick={() => scroll("left")}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className={`block w-full ${getGridClass(index)}`}
             >
-              <ChevronLeft className="h-6 w-6" />
-            </Button>
-          )}
-
-          <div
-            ref={scrollContainerRef}
-            className="flex gap-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory pb-4"
-            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-          >
-            {projects.map((project, index) => (
-              <Link key={index} href={`/projets/${project.slug}`} className="flex-shrink-0 w-[85vw] md:w-[400px]">
-                <Card
-                  className={`h-full overflow-hidden group cursor-pointer hover:shadow-2xl transition-all duration-500 snap-center border-2 hover:border-primary transform hover:-translate-y-2 ${
-                    isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"
+              <Card
+                className={`h-full w-full overflow-hidden group cursor-pointer hover:shadow-2xl transition-all duration-500 border-0 rounded-xl relative ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
                   }`}
-                  style={{ transitionDelay: `${index * 150}ms` }}
-                >
-                  <div className="relative h-80 overflow-hidden">
-                    <Image
-                      src={project.image || "/placeholder.svg"}
-                      alt={project.title}
-                      fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-300" />
-                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                      <div className="text-sm font-medium text-primary mb-2 uppercase tracking-wide">
-                        {project.category}
-                      </div>
-                      <h3 className="text-2xl font-bold text-balance mb-2">{project.title}</h3>
-                      <p className="text-sm text-white/80 mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
-                        {project.description}
-                      </p>
-                      <div className="flex items-center gap-2 text-primary font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200">
-                        <span>Voir le projet</span>
-                        <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                      </div>
-                    </div>
-                  </div>
-                </Card>
-              </Link>
-            ))}
-          </div>
+                style={{ transitionDelay: `${index * 100}ms` }}
+              >
+                <Image
+                  src={project.image || "/placeholder.svg"}
+                  alt={project.title}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
 
-          {canScrollRight && (
-            <Button
-              variant="outline"
-              size="icon"
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 h-12 w-12 rounded-full bg-white shadow-lg hover:scale-110 transition-transform"
-              onClick={() => scroll("right")}
-            >
-              <ChevronRight className="h-6 w-6" />
-            </Button>
-          )}
+                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                  <div className="text-xs md:text-sm font-medium text-primary mb-2 uppercase tracking-wide">
+                    {project.category}
+                  </div>
+                  <h3 className={`${index === 0 ? 'text-3xl md:text-4xl' : 'text-xl md:text-2xl'} font-bold text-balance mb-2`}>
+                    {project.title}
+                  </h3>
+                  <p className={`text-sm text-white/80 mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 ${index === 0 ? 'max-w-2xl' : ''}`}>
+                    {project.description}
+                  </p>
+                   
+                </div>
+              </Card>
+            </div>
+          ))}
         </div>
       </div>
     </section>
