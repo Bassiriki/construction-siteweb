@@ -1,7 +1,39 @@
 {
   "version": 4,
   "routes": {
+    "/": {
+      "routeType": "page",
+      "response": "complete",
+      "compute": "static",
+      "htmlSize": 138106,
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/_global-error": {
+      "routeType": "page",
+      "response": "complete",
+      "compute": "static",
+      "htmlSize": 8853,
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -16,7 +48,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/_global-error",
       "dataRoute": "/_global-error.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -28,6 +59,10 @@
     },
     "/_not-found": {
       "initialStatus": 404,
+      "routeType": "page",
+      "response": "complete",
+      "compute": "static",
+      "htmlSize": 54540,
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -42,7 +77,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/_not-found",
       "dataRoute": "/_not-found.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -53,6 +87,10 @@
       ]
     },
     "/adduction-eau": {
+      "routeType": "page",
+      "response": "complete",
+      "compute": "static",
+      "htmlSize": 99900,
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -67,7 +105,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/adduction-eau",
       "dataRoute": "/adduction-eau.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -83,6 +120,9 @@
         "content-type": "image/png",
         "x-next-cache-tags": "_N_T_/layout,_N_T_/apple-icon.png/layout,_N_T_/apple-icon.png/route,_N_T_/apple-icon.png"
       },
+      "routeType": "route",
+      "response": "complete",
+      "compute": "static",
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -97,7 +137,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/apple-icon.png",
       "dataRoute": null,
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -108,6 +147,10 @@
       ]
     },
     "/btp": {
+      "routeType": "page",
+      "response": "complete",
+      "compute": "static",
+      "htmlSize": 77200,
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -122,7 +165,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/btp",
       "dataRoute": "/btp.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -138,6 +180,9 @@
         "content-type": "image/png",
         "x-next-cache-tags": "_N_T_/layout,_N_T_/icon.png/layout,_N_T_/icon.png/route,_N_T_/icon.png"
       },
+      "routeType": "route",
+      "response": "complete",
+      "compute": "static",
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -152,7 +197,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/icon.png",
       "dataRoute": null,
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -163,6 +207,10 @@
       ]
     },
     "/menuiserie-aluminium": {
+      "routeType": "page",
+      "response": "complete",
+      "compute": "static",
+      "htmlSize": 80006,
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -177,32 +225,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/menuiserie-aluminium",
       "dataRoute": "/menuiserie-aluminium.rsc",
-      "prefetchDataRoute": null,
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "next-action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -213,6 +235,10 @@
       ]
     },
     "/prestation-service": {
+      "routeType": "page",
+      "response": "complete",
+      "compute": "static",
+      "htmlSize": 72095,
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -227,7 +253,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/prestation-service",
       "dataRoute": "/prestation-service.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -238,6 +263,10 @@
       ]
     },
     "/structuresmetal": {
+      "routeType": "page",
+      "response": "complete",
+      "compute": "static",
+      "htmlSize": 105190,
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -252,7 +281,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/structuresmetal",
       "dataRoute": "/structuresmetal.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",

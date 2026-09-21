@@ -7,8 +7,21 @@
   "segmentPaths": [
     "/_tree",
     "/_full",
-    "/adduction-eau/__PAGE__",
-    "/adduction-eau",
-    "/_index"
-  ]
+    "/_index",
+    "/adduction-eau/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 0,
+    "slots": {
+      "children": {
+        "hints": 64,
+        "slots": {
+          "children": {
+            "hints": 160,
+            "slots": null
+          }
+        }
+      }
+    }
+  }
 }

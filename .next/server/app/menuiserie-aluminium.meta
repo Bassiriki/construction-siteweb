@@ -7,8 +7,21 @@
   "segmentPaths": [
     "/_tree",
     "/_full",
-    "/menuiserie-aluminium/__PAGE__",
-    "/menuiserie-aluminium",
-    "/_index"
-  ]
+    "/_index",
+    "/menuiserie-aluminium/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 0,
+    "slots": {
+      "children": {
+        "hints": 64,
+        "slots": {
+          "children": {
+            "hints": 160,
+            "slots": null
+          }
+        }
+      }
+    }
+  }
 }
