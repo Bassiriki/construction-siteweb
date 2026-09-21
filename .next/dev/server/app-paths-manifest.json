@@ -1,8 +1,0 @@
-{
-  "/page": "app/page.js",
-  "/structuresmetal/page": "app/structuresmetal/page.js",
-  "/btp/page": "app/btp/page.js",
-  "/adduction-eau/page": "app/adduction-eau/page.js",
-  "/prestation-service/page": "app/prestation-service/page.js",
-  "/menuiserie-aluminium/page": "app/menuiserie-aluminium/page.js"
-}
